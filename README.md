@@ -22,7 +22,7 @@ At the end of the workshop you have a functioning chatbot capable of handling gr
 
 To start with your bot, you need to create a new instance of the Conversation service and launch the tool. For this, make sure that you're logged in to IBM Bluemix. Next,
 
-1. Use Ctrl-click to open the [service creation pane](https://console.eu-gb.bluemix.net/catalog/services/conversation?taxonomyNavigation=apps) in a separate tab.
+1. Use Ctrl-click (or the equivalent action for your system) to open the [service creation pane](https://console.eu-gb.bluemix.net/catalog/services/conversation?taxonomyNavigation=apps) in a separate tab.
 
 2. In the **Service name** field, specify `conversation-service`.
 
@@ -30,7 +30,7 @@ To start with your bot, you need to create a new instance of the Conversation se
 
 3. Click **Create**.
 
-4. Finally, on the 'Service Details' page, click **Launch tool** to open the Conversation Tooling.  
+4. Finally, on the **Service Details** page, click **Launch tool** to open the Conversation Tooling.  
 
 ![Launch tool][2]
 
@@ -38,13 +38,13 @@ To start with your bot, you need to create a new instance of the Conversation se
 
 A _workspace_ is a container for all the artifacts that define the behavior of your bot. To make life a bit easier for you, we've included a sample workspace to give your bot a jump-start. The steps below describe how to import this workspace into your service.
 
-1. Use Ctrl-click to open the <a href="https://ibm.box.com/v/demo-workspace" target=download>sample workspace</a> JSON file in a separate tab. Click **Download** to download this file to your own device.
+1. Use Ctrl-click (or the equivalent action for your system) to open the <a href="https://ibm.box.com/v/demo-workspace" target=download>sample workspace</a> JSON file in a separate tab. Click **Download** to download this file to your own device.
 
   ![Download workspace][3]
 
 2. If not already done, open the `conversation-service` service that you created in [Step 1](#step-1:-create-a-watson-conversation-service) and click on **Launch tool** to open the Watson Conversation Tooling.
 
-3. Click the import button and upload the workspace JSON file that you downloaded as the first step of this section.
+3. Click the import button and upload the file `demo_workspace.json` that you downloaded in the first step of this section.
 
   ![Import JSON][4]
 
@@ -244,7 +244,7 @@ Now that your bot is complete, you can experiment by enhancing it with new funct
 [1]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/create-service.png?raw=true
 [2]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/launch-tool.png?raw=true
 [3]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/download.png?raw=true
-[4]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/create-service.png?raw=true
+[4]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/import-json.png?raw=true
 [5]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/intents.png?raw=true
 [6]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/close.png?raw=true
 [7]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/jump-to.png?raw=true
@@ -252,4 +252,4 @@ Now that your bot is complete, you can experiment by enhancing it with new funct
 [9]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/jump-to-after.png?raw=true
 [10]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/music-branch.png?raw=true
 [11]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/ask-watson.png?raw=true
-[12]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/intents.png?raw=true
+[12]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/imported-workspace.png?raw=true
