@@ -7,7 +7,7 @@ Always wanted to know how to build your own chatbot? This workshop shows how to 
 
 * extending the bot's functionality to your own discretion.
 
-* _optionally_: deploy a NodeJS application to Bluemix that exposes your bot via Socket.IO
+* _(optionally)_ deploy a NodeJS application to Bluemix that exposes your bot via Socket.IO
 
 At the end of the workshop you have a functioning chatbot capable of handling greetings, requests to turn on car appliances and it will respond to weather related questions.
 
@@ -40,7 +40,7 @@ A _workspace_ is a container for all the artifacts that define the behavior of y
 
 1. Use Ctrl-click to open the <a href="https://ibm.box.com/v/demo-workspace" target=download>sample workspace</a> JSON file in a separate tab. Click **Download** to download this file to your own device.
 
-  ![Create workspace][3]
+  ![Download workspace][3]
 
 2. If not already done, open the `conversation-service` service that you created in [Step 1](#step-1:-create-a-watson-conversation-service) and click on **Launch tool** to open the Watson Conversation Tooling.
 
@@ -56,12 +56,11 @@ An intent is a purpose or goal expressed in the user's input, e.g. answering a q
 
 1. After the successful import in the previous section, you should see the following screen in front of you.
 
-![Select workspace][5]
+![Imported workspace][12]
 
 2. On the Intents tab (see above screenshot), select **Create new** and add the following intent name: `turn_on`. This intent indicates that the user wants to turn on an appliance -- such as the car's radio, airco or headlights.
 
-On the Workspaces page, click the workspace tile that you imported in the previous section.
-
+![Workspace intents][5]
 
 3. In the **User example** field, type `I need lights` as sample sentence and press Enter.
 
@@ -242,9 +241,15 @@ Now that your bot is complete, you can experiment by enhancing it with new funct
 
 ## (Optional): Deploy a sample application to host your bot
 
+[1]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/create-service.png?raw=true
+[2]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/launch-tool.png?raw=true
+[3]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/download.png?raw=true
+[4]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/create-service.png?raw=true
+[5]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/intents.png?raw=true
 [6]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/close.png?raw=true
 [7]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/jump-to.png?raw=true
 [8]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/jump-to-before.png?raw=true
 [9]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/jump-to-after.png?raw=true
 [10]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/music-branch.png?raw=true
 [11]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/ask-watson.png?raw=true
+[12]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/intents.png?raw=true
