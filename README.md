@@ -230,11 +230,6 @@ If the bot fails to recognize the correct intent, you can retrain it directly fr
 
 **Tip**: Don't include the `#` character when you type the intent name.
 
-## Step 6: _(Optional)_ Deploy a sample application to host your bot
-
-
-
-
 ### What to do next
 
 Now that your bot is complete, you can experiment by enhancing it with new functions. For example:
@@ -243,6 +238,13 @@ Now that your bot is complete, you can experiment by enhancing it with new funct
 * Add synonyms for entities
 * Add a new intent to turn off appliances
 * Add capability for turning on music and specifying a musical genre with a single command
+
+## Step 6: _(Optional)_ - deploy a sample application to host your bot
+
+[![Deploy to Bluemix](https://deployment-tracker.mybluemix.net/stats/a3a41102a5d277cce1b65b7b1dc018e8/button.svg)](https://bluemix.net/deploy?repository=https://github.com/eciggaar/botmaster-watsonconversation-socketio.git)
+
+
+
 
 
 [1]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/create-service.png?raw=true
