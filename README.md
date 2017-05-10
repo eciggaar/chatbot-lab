@@ -48,7 +48,7 @@ A _workspace_ is a container for all the artifacts that define the behavior of y
 
   ![Import JSON][4]
 
-We now successfully imported a sample workspace into our service. Next, the bot's functionality can be extended by defining more intents and entities. These will then be included into the bot's dialog.
+You now successfully imported a sample workspace into your service. Next, the bot's functionality can be extended by defining more intents and entities. These will then be included into the bot's dialog.
 
 ## Step 3: Adding a new intent
 
@@ -58,7 +58,7 @@ An intent is a purpose or goal expressed in the user's input, e.g. answering a q
 
 ![Imported workspace][12]
 
-2. On the Intents tab (see above screenshot), select **Create new** and add the following intent name: `turn_on`. This intent indicates that the user wants to turn on an appliance -- such as the car's radio, airco or headlights.
+2. On the Intents tab, select **Create new** and add the following intent name: `turn_on`. This intent indicates that the user wants to turn on an appliance -- such as the car's radio, airco or headlights.
 
 ![Workspace intents][5]
 
@@ -74,7 +74,7 @@ An intent is a purpose or goal expressed in the user's input, e.g. answering a q
 
 Finally, click **Create** at the top right to complete the intent creation. You now defined an additional intent `#turn_on` with example utterances. These examples help train Watson to recognize the intents in the user's input.
 
-## Step 2: Adding entities
+## Step 4: Adding entities
 An entity definition includes a set of entity _values_ that can be used to trigger different responses. Each entity value can have multiple _synonyms_, which define different ways that the same value might be specified in the user's input.
 
 Create entities to represent what the user wants to turn on.
@@ -106,7 +106,7 @@ The `@appliance` entity represents an appliance in the car that a user might wan
 
 You defined two entities: `@appliance` -- representing an appliance that can be turned on -- and `@genre` representing a genre of music the user can choose. The next section will explain how you can extend the existing dialog to use these intents and entities and set the correct response.
 
-## Step 4: Extending your dialog
+## Step 5: Extending your dialog
 A dialog is a set of conversational nodes that are contained in a workspace. Together the set of nodes makes a dialog tree, on which every branch is a conversation that can be held with a user. A _Welcome, Get weather info_ and _Greeting_ branch are already set up for you.
 
 Now we are going to extend the dialog by adding a branch that responds to the `#turn_on` intent. Because there are multiple possibilities for what the user might want to turn on, this branch represents a more complex conversation.
@@ -230,6 +230,11 @@ If the bot fails to recognize the correct intent, you can retrain it directly fr
 
 **Tip**: Don't include the `#` character when you type the intent name.
 
+## Step 6: _(Optional)_ Deploy a sample application to host your bot
+
+
+
+
 ### What to do next
 
 Now that your bot is complete, you can experiment by enhancing it with new functions. For example:
@@ -239,7 +244,6 @@ Now that your bot is complete, you can experiment by enhancing it with new funct
 * Add a new intent to turn off appliances
 * Add capability for turning on music and specifying a musical genre with a single command
 
-## (Optional): Deploy a sample application to host your bot
 
 [1]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/create-service.png?raw=true
 [2]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/launch-tool.png?raw=true
