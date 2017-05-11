@@ -271,7 +271,7 @@ In the **Delivery Pipline** section, choose the `United Kingdom` as region and s
 
 ![Select region][17]
 
-Congratulations!! You have built your own bot in a snap!! :smiley: :smiley:
+**Congratulations!!** You built your own bot in a snap!! :smiley: :smiley:
 
 [1]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/create-service.png?raw=true
 [2]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/launch-tool.png?raw=true
