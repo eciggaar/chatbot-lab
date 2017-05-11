@@ -12,11 +12,27 @@ Always wanted to know how to build your own chatbot? This workshop shows how to 
 At the end of the workshop you have a functioning chatbot capable of handling greetings, requests to turn on car appliances and it will respond to weather related questions.
 
 ## Before you begin
+To be able to use the Watson APIs, you need to have a Bluemix account. If you don't have one yet -- or you did not yet complete the initial set up of your Bluemix account -- follow the steps below.
 
-* Create a Bluemix account
+Your account must have available space for at least 1 application (256MB) and 3 services.
 
-    * [Sign Up](https://developer.ibm.com/sso/bmregistration) in Bluemix, or use an existing account. Your account must have available space for at least 1 application (256MB) and 3 services.
+### Not registered
+* Use Ctrl-click (or the equivalent action for your system) to open the [Sign Up](https://developer.ibm.com/sso/bmregistration) for Bluemix page in a separate tab. Fill in the form and click **Start your FREE Bluemix trial** to complete the registration. You will receive an activation mail in your inbox.
 
+### First time login
+* Use Ctrl-click again to the [Login](https://console.eu-gb.bluemix.net/login) to Bluemix in a separate tab. First time users need to complete a 4-step wizard. This starts by accepting the terms & conditions.
+
+  ![Terms & conditions][13]
+
+  Next, define a name for your organization
+
+  ![Organization name][14]
+
+  followed by choosing a name for your space
+
+  ![Space name][15]
+
+  Typically `dev` would be a good name for your first space. On the last page, click **I'm Ready** to complete the set up process.
 
 ## Step 1: Create a Watson Conversation service
 
@@ -259,3 +275,6 @@ Now that your bot is complete, you can experiment by enhancing it with new funct
 [10]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/music-branch.png?raw=true
 [11]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/ask-watson.png?raw=true
 [12]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/imported-workspace.png?raw=true
+[13]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/terms.png?raw=true
+[14]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/create-org.png?raw=true
+[15]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/create-space.png?raw=true
