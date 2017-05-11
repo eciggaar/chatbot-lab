@@ -14,7 +14,7 @@ At the end of the workshop you have a functioning chatbot capable of handling gr
 ## Before you begin
 To be able to use the Watson APIs, you need to have a Bluemix account. If you don't have one yet -- or you did not yet complete the initial set up of your Bluemix account -- follow the steps below.
 
-Your account must have available space for at least 1 application (256MB) and 3 services.
+Your account must have enough resources available for at least 1 application (256MB) and 3 services.
 
 ### Not registered
 * Use Ctrl-click (or the equivalent action for your system) to open the [Sign Up for Bluemix](https://developer.ibm.com/sso/bmregistration) page in a separate tab. Fill in the form and click **Start your FREE Bluemix trial** to complete the registration. You will receive an activation mail in your inbox.
@@ -24,15 +24,15 @@ Your account must have available space for at least 1 application (256MB) and 3 
 
   ![Terms & conditions][13]
 
-  Next, define a name for your organization
+  Define a name for your organization
 
   ![Organization name][14]
 
-  followed by choosing a name for your space
+  Choose a name for your space. Typically `dev` would be a good name for your first space.
 
   ![Space name][15]
 
-  Typically `dev` would be a good name for your first space. On the last page, click **I'm Ready** to complete the set up process.
+  On the last page, click **I'm Ready** to complete the set up process.
 
 ## Step 1: Create a Watson Conversation service
 
@@ -257,9 +257,19 @@ Now that your bot is complete, you can experiment by enhancing it with new funct
 
 ## Step 6: _(Optional)_ - deploy a sample application to host your bot
 
+To see your bot live in action, using a sample NodeJS application, press Ctrl-click (or the equivalent for your system) to open the button below in a separate tab. This deployment sets up a delivery pipeline for which the Continues Delivery service is created. Until now, this service is only available in the US region of Bluemix. To make sure you have a space in this region as well, use Ctrl-click to open the [dashboard](https://console.ng.bluemix.net/login) of this region. If you are all OK, you get the dashboard. Otherwise, you will be asked to create your first space in this region...
+
+![Create space in US][16]
+
+In the **Delivery Pipline** section, choose the `United Kingdom` as region and select the space where you deployed your Watson Conversation service to (most likely `dev`).
+
+![Select region][17]
+
+Use Ctrl-click (or the equivalent for your system) to open the deploy-to button below in a separate tab.
+
 [![Deploy to Bluemix](https://deployment-tracker.mybluemix.net/stats/a3a41102a5d277cce1b65b7b1dc018e8/button.svg)](https://bluemix.net/deploy?repository=https://github.com/eciggaar/botmaster-watsonconversation-socketio.git)
 
-
+Congratulations!! You have built your own bot in a snap!! :smiley: :smiley:
 
 [1]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/create-service.png?raw=true
 [2]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/launch-tool.png?raw=true
@@ -276,3 +286,5 @@ Now that your bot is complete, you can experiment by enhancing it with new funct
 [13]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/terms.png?raw=true
 [14]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/create-org.png?raw=true
 [15]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/create-space.png?raw=true
+[16]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/create-us-space.png?raw=true
+[17]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/region.png?raw=true
