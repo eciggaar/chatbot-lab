@@ -17,10 +17,10 @@ To be able to use the Watson APIs, you need to have a Bluemix account. If you do
 Your account must have available space for at least 1 application (256MB) and 3 services.
 
 ### Not registered
-* Use Ctrl-click (or the equivalent action for your system) to open the [Sign Up](https://developer.ibm.com/sso/bmregistration) for Bluemix page in a separate tab. Fill in the form and click **Start your FREE Bluemix trial** to complete the registration. You will receive an activation mail in your inbox.
+* Use Ctrl-click (or the equivalent action for your system) to open the [Sign Up for Bluemix](https://developer.ibm.com/sso/bmregistration) page in a separate tab. Fill in the form and click **Start your FREE Bluemix trial** to complete the registration. You will receive an activation mail in your inbox.
 
 ### First time login
-* Use Ctrl-click again to the [Login](https://console.eu-gb.bluemix.net/login) to Bluemix in a separate tab. First time users need to complete a 4-step wizard. This starts by accepting the terms & conditions.
+* Use Ctrl-click (or the equivalent action for your system) to open the [Login to Bluemix](https://console.eu-gb.bluemix.net/login) in a separate tab. First time users need to complete a 4-step wizard. This starts by accepting the terms & conditions.
 
   ![Terms & conditions][13]
 
@@ -258,8 +258,6 @@ Now that your bot is complete, you can experiment by enhancing it with new funct
 ## Step 6: _(Optional)_ - deploy a sample application to host your bot
 
 [![Deploy to Bluemix](https://deployment-tracker.mybluemix.net/stats/a3a41102a5d277cce1b65b7b1dc018e8/button.svg)](https://bluemix.net/deploy?repository=https://github.com/eciggaar/botmaster-watsonconversation-socketio.git)
-
-
 
 
 
