@@ -277,7 +277,15 @@ In the **Delivery Pipline** section, choose the `United Kingdom` as region and s
 
 ![Select region][17]
 
-**Congratulations!!** You built your own bot in a snap!! :smiley: :smiley:
+Click **Deploy** to start the deployment. You can track the deployment by clicking the Delivery Pipeline tile in the toolchain.
+
+![Select delivery pipeline][18]
+
+Once the **Deploy Stage** is also successfully completed, select the URL to view your app.
+
+![View app][19]
+
+**Congratulations!!** You've built your own bot in a snap!! :smiley: :smiley:
 
 [1]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/create-service.png?raw=true
 [2]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/launch-tool.png?raw=true
@@ -296,3 +304,5 @@ In the **Delivery Pipline** section, choose the `United Kingdom` as region and s
 [15]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/create-space.png?raw=true
 [16]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/create-us-space.png?raw=true
 [17]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/region.png?raw=true
+[18]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/delivery-pipeline.png?raw=true
+[19]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/view-app.png?raw=true
