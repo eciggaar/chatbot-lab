@@ -12,14 +12,20 @@ Always wanted to know how to build your own chatbot? This workshop shows how to 
 At the end of the workshop you have a functioning chatbot capable of handling greetings, requests to turn on car appliances and it will respond to weather related questions.
 
 ## Before you begin
-To be able to use the Watson APIs, you need to have a Bluemix account. If you don't have one yet -- or you did not yet complete the initial set up of your Bluemix account -- follow the steps below.
+To be able to use the Watson APIs, you need to have a Bluemix account. If you don't have one yet -- or you did not complete the initial set up of your Bluemix account -- follow the steps below.
 
 Your account must have enough resources available for at least 1 application (256MB) and 3 services.
 
+### Already registered and completed set-up
+
+* When you already registered and completed the initial set-up of your Bluemix account, you directly jump to [Step 1: Create a Watson Conversation service](#step-1-create-a-watson-conversation-service).
+
 ### Not registered
+
 * Use Ctrl-click (or the equivalent action for your system) to open the [Sign Up for Bluemix](https://developer.ibm.com/sso/bmregistration) page in a separate tab. Fill in the form and click **Start your FREE Bluemix trial** to complete the registration. You will receive an activation mail in your inbox.
 
 ### First time login
+
 * Use Ctrl-click (or the equivalent action for your system) to open the [Login to Bluemix](https://console.eu-gb.bluemix.net/login) in a separate tab. First time users need to complete a 4-step wizard. This starts by accepting the terms & conditions.
 
   ![Terms & conditions][13]
@@ -58,7 +64,7 @@ A _workspace_ is a container for all the artifacts that define the behavior of y
 
   ![Download workspace][3]
 
-2. If not already done, open the `conversation-service` service that you created in [Step 1](#step-1:-create-a-watson-conversation-service) and click on **Launch tool** to open the Watson Conversation Tooling.
+2. If not already done, open the `conversation-service` service that you created in [Step 1](#step-1-create-a-watson-conversation-service) and click on **Launch tool** to open the Watson Conversation Tooling.
 
 3. Click the import button and upload the file `demo_workspace.json` that you downloaded in the first step of this section.
 
@@ -108,7 +114,7 @@ The `@appliance` entity represents an appliance in the car that a user might wan
 
     * Value: `headlights`. Synonym: `lights`.
 
-    * Value: `air conditioning`. Synonyms: `air`.
+    * Value: `air conditioning`. Synonyms: `air` and `airco`.
 
   Click **Create** when finished.
 
