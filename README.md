@@ -257,17 +257,19 @@ Now that your bot is complete, you can experiment by enhancing it with new funct
 
 ## Step 6: _(Optional)_ - deploy a sample application to host your bot
 
-To see your bot live in action, using a sample NodeJS application, press Ctrl-click (or the equivalent for your system) to open the button below in a separate tab. This deployment sets up a delivery pipeline for which the Continues Delivery service is created. Until now, this service is only available in the US region of Bluemix. To make sure you have a space in this region as well, use Ctrl-click to open the [dashboard](https://console.ng.bluemix.net/login) of this region. If you are all OK, you get the dashboard. Otherwise, you will be asked to create your first space in this region...
+To see your bot live in action, using a sample NodeJS application, press Ctrl-click (or the equivalent for your system) to open the button below in a separate tab. This deployment sets up a delivery pipeline for which the Continues Delivery service is created. Until now, this service is only available in the US region of Bluemix.
+
+To make sure you have a space in this region as well, use Ctrl-click to open the [dashboard](https://console.ng.bluemix.net/login) of this region. If you are all OK, you get the dashboard. Otherwise, you will be asked to create your first space in this region -- as depicted in the screenshot below.
 
 ![Create space in US][16]
-
-In the **Delivery Pipline** section, choose the `United Kingdom` as region and select the space where you deployed your Watson Conversation service to (most likely `dev`).
-
-![Select region][17]
 
 Use Ctrl-click (or the equivalent for your system) to open the deploy-to button below in a separate tab.
 
 [![Deploy to Bluemix](https://deployment-tracker.mybluemix.net/stats/a3a41102a5d277cce1b65b7b1dc018e8/button.svg)](https://bluemix.net/deploy?repository=https://github.com/eciggaar/botmaster-watsonconversation-socketio.git)
+
+In the **Delivery Pipline** section, choose the `United Kingdom` as region and select the space where you deployed your Watson Conversation service to (most likely `dev`).
+
+![Select region][17]
 
 Congratulations!! You have built your own bot in a snap!! :smiley: :smiley:
 
