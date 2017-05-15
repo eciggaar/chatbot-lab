@@ -310,6 +310,7 @@ Deployment tracking can be disabled by removing `require('cf-deployment-tracker-
 
 * Botmaster Documentation : [Botmaster Documentation](http://botmasterai.com/)
 * Watson Conversation Documentation : [Watson Conversation](http://www.ibm.com/watson/developercloud/doc/conversation/index.html)
+* Watson Conversation Tutorial: [Watson Tutorial](https://www.ibm.com/watson/developercloud/doc/conversation/tutorial.html)
 
 [1]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/create-service.png?raw=true
 [2]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/launch-tool.png?raw=true
