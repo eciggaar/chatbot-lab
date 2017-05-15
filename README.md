@@ -293,7 +293,7 @@ Once the **Deploy Stage** is also successfully completed, select the URL to view
 
 ## Privacy Notice
 
-The node sample web application, that is deployed for you when clicking the **Deploy to Bluemix** button, includes code to track deployments to Bluemix and other Cloud Foundry platforms. The following information is sent to a [Deployment Tracker][deploy_track_url] service on each deployment:
+The node sample web application, that is deployed for you when clicking the **Deploy to Bluemix** button, includes code to track deployments to Bluemix and other Cloud Foundry platforms. The following information is sent to a Deployment Tracker service on each deployment:
 
 * Application Name (`application_name`)
 * Space ID (`space_id`)
