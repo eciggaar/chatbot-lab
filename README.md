@@ -287,6 +287,30 @@ Once the **Deploy Stage** is also successfully completed, select the URL to view
 
 **Congratulations!!** You've built your own bot in a snap!! :smiley: :smiley:
 
+## License
+
+  The sample code which is deployed via the **Deploy to Bluemix** button is licensed under Apache 2.0. Full license text is available in [LICENSE](LICENSE).
+
+## Privacy Notice
+
+The node sample web application, that is deployed for you when clicking the **Deploy to Bluemix** button, includes code to track deployments to Bluemix and other Cloud Foundry platforms. The following information is sent to a [Deployment Tracker][deploy_track_url] service on each deployment:
+
+* Application Name (`application_name`)
+* Space ID (`space_id`)
+* Application Version (`application_version`)
+* Application URIs (`application_uris`)
+
+This data is collected from the `VCAP_APPLICATION` environment variable in IBM Bluemix and other Cloud Foundry platforms. This data is used by IBM to track metrics around deployments of sample applications to IBM Bluemix. Only deployments of sample applications that include code to ping the Deployment Tracker service will be tracked.
+
+### Disabling Deployment Tracking
+
+Deployment tracking can be disabled by removing `require('cf-deployment-tracker-client').track();` from the beginning of the `app.js` file at the root of its repo.
+
+## Additional Links
+
+* Botmaster Documentation : [Botmaster Documentation](http://botmasterai.com/)
+* Watson Conversation Documentation : [Watson Conversation](http://www.ibm.com/watson/developercloud/doc/conversation/index.html)
+
 [1]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/create-service.png?raw=true
 [2]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/launch-tool.png?raw=true
 [3]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/download.png?raw=true
