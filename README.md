@@ -135,11 +135,11 @@ Now we are going to extend the dialog by adding a branch that responds to the `#
 
 For this, we start by creating the root-level node:
 
-1. Select the **options** icon ![Options][20] on the right-hand side of the `#greeting` node and select **Add node below** to create a new root-level node.
+1. Click the **options** icon ![Options][20] on the right-hand side of the `#greeting` node and select **Add node below** to create a new root-level node.
 
 2. In the **Name this node** field, enter `Turn On`. The title does not affect the processing of the node, but it makes it easier to find.
 
-3. In the edit view, in the **If bot recognizes** field, start typing `#turn_on`.
+3. In the edit view, in the **Enter a condition** field, start typing `#turn_on`.
 
 4. Select **#turn_on** from the list. This condition is triggered by any input that matches the `#turn_on` intent.
 
@@ -158,11 +158,11 @@ We'll check the conditions in this order. Determining the most efficient order i
 
 To check the input, add a child node:
 
-1. Select the **+** icon on the side of the `turn on` node to create a child node.
+1. Click the **options** icon ![Options][20] on the right-hand side of the `#turn on` node and select **Add child node** to create a new child node.
 
 2. In the **Name this node** field, enter `Music`.
 
-3. Under **Trigger**, enter `@appliance:music`. This condition is true if the value of the `@appliance` entity is `music` or one of its synonyms, as defined on the Entities tab.
+3. Under **Enter a condition**, enter `@appliance:music`. This condition is true if the value of the `@appliance` entity is `music` or one of its synonyms, as defined on the Entities tab.
 
 4. In the **Enter a response** field, enter `What kind of music would you like to hear?`
 
@@ -170,30 +170,30 @@ To check the input, add a child node:
 
 We want to jump directly from the _Turn On_ node to the _Music_ node without asking for any more user input. To do this, we use a **Jump to** action.
 
-1. In the _Turn On_ node, select the **Jump to** icon ![Jump to][7].
-2. Select the _Music_ node, and then select **Go to condition**. We want to process the condition of the _Music_ node.
+1. Click the **options** icon ![Options][20] on the right-hand side of the _Turn on_ node and select **Jump to**.
+2. Select the _Music_ node, and then select **If bot recognizes (condition)**. We want to process the condition of the _Music_ node.
 
 ![Jump to before][8]
 
 Note that you had to create the target node -- the node to which you want to jump -- before you added the **Jump to** action.
 
-After you select **Go to condition** you see a new box in the tree:
+After you selected the place where to jump to, you should see the following in your dialog:
 
 ![Jump to after][9]
 
 Now we need a node to process the type of music that the user requests.
 
-1. Select the **+** icon on the right side of the _Music_ node to create a child node and enter `Genre` in the **Name this node** field. This child node is evaluated only after the user has responded to the question about the type of music. Because we need a user input before this node, there is no need to use a **Jump to** action.
+1. Select the **options** icon ![Options][20] on the right-hand side of the _Music_ node and click **Add child node** to create a child node. Enter `Genre` in the **Name this node** field. This child node is evaluated only after the user has responded to the question about the type of music. Because we need a user input before this node, there is no need to use a **Jump to** action.
 
-2. Under **Trigger**, enter `@genre`. This condition is true whenever a valid value for the `@genre` entity is detected.
+2. Under **Enter a condition**, enter `@genre`. This condition is true whenever a valid value for the `@genre` entity is detected.
 
 3. In the **Enter a response** field, enter `OK! Playing @genre.` This response uses the value that the user entered.
 
 We also need a node to respond when the user does not specify a recognized value for `@genre`.
 
-1. Select the **+** icon on the bottom of the _Genre_ node to create a peer node. Name it `Genre not recognized`.
+1. Select the **options** icon ![Options][20] on the right-hand side of the _Genre_ node and click **Add node below** to create a peer node. Name it `Genre not recognized`.
 
-2. Under **Trigger**, enter `true`. This condition specifies that if the dialog flow reaches this node, it should always evaluate as true. If the user specifies a valid `@genre` value, this node will never be reached.
+2. Under **Enter a condition**, enter `true`. This condition specifies that if the dialog flow reaches this node, it should always evaluate as true. If the user specifies a valid `@genre` value, this node will never be reached.
 
 3. In the **Enter a response** field, enter `I'm sorry, I don't understand. I can play classical, rhythm and blues, or rock music.`
 
@@ -221,7 +221,7 @@ Next, we'll create a node that is used when the user specifies any other valid v
 
 2. Select the **+** icon on the bottom of the music node to create a peer node.
 
-3. Under **Trigger**, enter `@appliance`. This condition is triggered if the user input includes any recognized value for the `@appliance` entity, except music.
+3. Under **Enter a condition**, enter `@appliance`. This condition is triggered if the user input includes any recognized value for the `@appliance` entity, except music.
 
 4. In the **Enter a response** field, enter `OK! Turning on the @appliance.` This response uses the value that the user entered.
 
@@ -229,7 +229,7 @@ Now add a peer node that will be triggered if the user input did not specify a v
 
 1. Select the **+** icon on the bottom of the `@appliance` node to create a peer node.
 
-2. Under **Trigger**, enter `true`. This condition specifies that if the dialog flow reaches this node, it should always evaluate as true. If the user specifies a valid `@appliance` value, this node will never be reached.
+2. Under **Enter a condition**, enter `true`. This condition specifies that if the dialog flow reaches this node, it should always evaluate as true. If the user specifies a valid `@appliance` value, this node will never be reached.
 
 3. In the **Enter a response** field, enter `I'm sorry, I don't know how to do that. I can turn on music, headlights, or air conditioning.`.
 
