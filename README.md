@@ -135,7 +135,7 @@ Now we are going to extend the dialog by adding a branch that responds to the `#
 
 For this, we start by creating the root-level node:
 
-1. Click the **options** icon ![Options][20] on the right-hand side of the `#greeting` node and select **Add node below** to create a new root-level node.
+1. Click the **options** icon ![Options][7] on the right-hand side of the `#greeting` node and select **Add node below** to create a new root-level node.
 
 2. In the **Name this node** field, enter `Turn On`. The title does not affect the processing of the node, but it makes it easier to find.
 
@@ -158,7 +158,7 @@ We'll check the conditions in this order. Determining the most efficient order i
 
 To check the input, add a child node:
 
-1. Click the **options** icon ![Options][20] on the right-hand side of the `#turn on` node and select **Add child node** to create a new child node.
+1. Click the **options** icon ![Options][7] on the right-hand side of the `#turn on` node and select **Add child node** to create a new child node.
 
 2. In the **Name this node** field, enter `Music`.
 
@@ -170,7 +170,7 @@ To check the input, add a child node:
 
 We want to jump directly from the _Turn On_ node to the _Music_ node without asking for any more user input. To do this, we use a **Jump to** action.
 
-1. Click the **options** icon ![Options][20] on the right-hand side of the _Turn on_ node and select **Jump to**.
+1. Click the **options** icon ![Options][7] on the right-hand side of the _Turn on_ node and select **Jump to**.
 2. Select the _Music_ node, and then select **If bot recognizes (condition)**. We want to process the condition of the _Music_ node.
 
 ![Jump to before][8]
@@ -183,7 +183,7 @@ After you selected the place where to jump to, you should see the following in y
 
 Now we need a node to process the type of music that the user requests.
 
-1. Select the **options** icon ![Options][20] on the right-hand side of the _Music_ node and click **Add child node** to create a child node. Enter `Genre` in the **Name this node** field. This child node is evaluated only after the user has responded to the question about the type of music. Because we need a user input before this node, there is no need to use a **Jump to** action.
+1. Click the **options** icon ![Options][7] on the right-hand side of the _Music_ node and select **Add child node** to create a child node. Enter `Genre` in the **Name this node** field. This child node is evaluated only after the user has responded to the question about the type of music. Because we need a user input before this node, there is no need to use a **Jump to** action.
 
 2. Under **Enter a condition**, enter `@genre`. This condition is true whenever a valid value for the `@genre` entity is detected.
 
@@ -191,7 +191,7 @@ Now we need a node to process the type of music that the user requests.
 
 We also need a node to respond when the user does not specify a recognized value for `@genre`.
 
-1. Select the **options** icon ![Options][20] on the right-hand side of the _Genre_ node and click **Add node below** to create a peer node. Name it `Genre not recognized`.
+1. Click the **options** icon ![Options][7] on the right-hand side of the _Genre_ node and select **Add node below** to create a peer node. Name it `Genre not recognized`.
 
 2. Under **Enter a condition**, enter `true`. This condition specifies that if the dialog flow reaches this node, it should always evaluate as true. If the user specifies a valid `@genre` value, this node will never be reached.
 
@@ -318,7 +318,7 @@ Deployment tracking can be disabled by removing `require('cf-deployment-tracker-
 [4]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/import-json.png?raw=true
 [5]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/intents.png?raw=true
 [6]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/close.png?raw=true
-[7]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/jump-to.png?raw=true
+[7]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/options.png?raw=true
 [8]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/jump-to-before.png?raw=true
 [9]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/jump-to-after.png?raw=true
 [10]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/music-branch.png?raw=true
@@ -331,4 +331,3 @@ Deployment tracking can be disabled by removing `require('cf-deployment-tracker-
 [17]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/region.png?raw=true
 [18]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/delivery-pipeline.png?raw=true
 [19]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/view-app.png?raw=true
-[20]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/options.png?raw=true
