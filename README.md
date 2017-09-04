@@ -219,7 +219,7 @@ Next, we'll create a node that is used when the user specifies any other valid v
 
 1. Select the _Music_ node, so that the options to create child and peer nodes are displayed.
 
-2. Select the **+** icon on the bottom of the music node to create a peer node.
+2. Click the **options** icon ![Options][7] on the right-hand side of the _Music_ node and select **Add node below** to create a peer node.
 
 3. Under **Enter a condition**, enter `@appliance`. This condition is triggered if the user input includes any recognized value for the `@appliance` entity, except music.
 
@@ -227,7 +227,7 @@ Next, we'll create a node that is used when the user specifies any other valid v
 
 Now add a peer node that will be triggered if the user input did not specify a valid appliance:
 
-1. Select the **+** icon on the bottom of the `@appliance` node to create a peer node.
+1. Click the **options** icon ![Options][7] on the right-hand side of the `@appliance` node and select **Add node below** to create a peer node.
 
 2. Under **Enter a condition**, enter `true`. This condition specifies that if the dialog flow reaches this node, it should always evaluate as true. If the user specifies a valid `@appliance` value, this node will never be reached.
 
