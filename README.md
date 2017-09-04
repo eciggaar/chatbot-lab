@@ -135,7 +135,7 @@ Now we are going to extend the dialog by adding a branch that responds to the `#
 
 For this, we start by creating the root-level node:
 
-1. Select the **options** icon ![Options][7] on the right-hand side of the `#greeting` node and select **Add node below** to create a new root-level node.
+1. Select the **options** icon ![Options][20] on the right-hand side of the `#greeting` node and select **Add node below** to create a new root-level node.
 
 2. In the **Name this node** field, enter `Turn On`. The title does not affect the processing of the node, but it makes it easier to find.
 
