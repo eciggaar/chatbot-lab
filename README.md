@@ -116,7 +116,7 @@ The `@appliance` entity represents an appliance in the car that a user might wan
 
     * Value: `air conditioning`. Synonyms: `air` and `airco`.
 
-  Click **Create** when finished.
+  Click **Done** when finished.
 
 4. Repeat the process to create the `@genre` entity with 3 values and synonyms:
 
@@ -273,11 +273,11 @@ Use Ctrl-click (or the equivalent for your system) to open the deploy-to button 
 
 [![Deploy to Bluemix](https://deployment-tracker.mybluemix.net/stats/a3a41102a5d277cce1b65b7b1dc018e8/button.svg)](https://bluemix.net/deploy?repository=https://github.com/eciggaar/botmaster-watsonconversation-socketio.git)
 
-In the **Delivery Pipline** section, choose the `United Kingdom` as region and select the space where you deployed your Watson Conversation service to (most likely `dev`).
+In the **Delivery Pipline** section, choose the `United Kingdom (Production)` as region and select the space where you deployed your Watson Conversation service to (most likely `dev`).
 
 ![Select region][17]
 
-Click **Deploy** to start the deployment. You can track the deployment by clicking the Delivery Pipeline tile in the toolchain.
+Click **Deploy** to start the deployment. You can check the deployment by clicking the Delivery Pipeline tile in the toolchain.
 
 ![Select delivery pipeline][18]
 
