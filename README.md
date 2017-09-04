@@ -94,7 +94,7 @@ An intent is a purpose or goal expressed in the user's input, e.g. answering a q
   Turn on the headlights
 ```
 
-Finally, click **Create** at the top right to complete the intent creation. You now defined an additional intent `#turn_on` with example utterances. These examples help train Watson to recognize the intents in the user's input.
+Finally, click **Done** at the top right to complete the intent creation. You now defined an additional intent `#turn_on` with example utterances. These examples help train Watson to recognize the intents in the user's input.
 
 ## Step 4: Adding entities
 An entity definition includes a set of entity _values_ that can be used to trigger different responses. Each entity value can have multiple _synonyms_, which define different ways that the same value might be specified in the user's input.
@@ -118,7 +118,7 @@ The `@appliance` entity represents an appliance in the car that a user might wan
 
   Click **Create** when finished.
 
-4. Repeat the process to create the `@genre` entity with 2 values and synonyms:
+4. Repeat the process to create the `@genre` entity with 3 values and synonyms:
 
     * Value: `classical`. Synonym: `symphonic`.
 
@@ -135,15 +135,15 @@ Now we are going to extend the dialog by adding a branch that responds to the `#
 
 For this, we start by creating the root-level node:
 
-1. Select the **+** icon on the bottom of the `#greeting` node to create a root-level node. If the **+** icon isn't visible, select the `#greeting` node to put it into focus.
+1. Select the **options** icon ![Options][7] on the right-hand side of the `#greeting` node and select **Add node below** to create a new root-level node.
 
 2. In the **Name this node** field, enter `Turn On`. The title does not affect the processing of the node, but it makes it easier to find.
 
-3. In the edit view, in the **Trigger** field, start typing `#turn_on`.
+3. In the edit view, in the **If bot recognizes** field, start typing `#turn_on`.
 
 4. Select **#turn_on** from the list. This condition is triggered by any input that matches the `#turn_on` intent.
 
-5. Do not enter a response in this node.
+5. Do not enter a response in this node and click ![Close][6] to continue.
 
 ### Add multiple child nodes for `#turn_on`
 The `#turn_on` intent requires additional processing, because the dialog needs to determine which appliance the user wants to turn on. To handle this, we create multiple responses based on additional conditions. There are three possible scenarios, based on the intents and entities that we have defined:
@@ -331,3 +331,4 @@ Deployment tracking can be disabled by removing `require('cf-deployment-tracker-
 [17]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/region.png?raw=true
 [18]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/delivery-pipeline.png?raw=true
 [19]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/view-app.png?raw=true
+[20]: https://github.com/eciggaar/chatbot-lab/blob/master/readmeimages/options.png?raw=true
