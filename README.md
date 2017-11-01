@@ -22,7 +22,7 @@ Your account must have enough resources available for at least 1 application (25
 
 ### Not registered
 
-* Use Ctrl-click (or the equivalent action for your system) to open the [Sign Up for Bluemix](https://console.bluemix.net/registration/trial) page in a separate tab. Fill in the form and click **Start your FREE Bluemix trial** to complete the registration. You will receive an activation mail in your inbox.
+* Use Ctrl-click (or the equivalent action for your system) to open the [Sign Up for Bluemix](https://console.bluemix.net/registration/?cm_mc_uid=16246976454914914061630&cm_mc_sid_50200000=1491856472&cm_mc_sid_52640000=1491856472) page in a separate tab. Fill in the form and click **Create Account** to complete the registration. You will receive an activation mail in your inbox.
 
 ### First time login
 
