@@ -26,7 +26,7 @@ Your account must have enough resources available for at least 1 application (25
 
 ### First time login
 
-* Use Ctrl-click (or the equivalent action for your system) to open the [Login to Bluemix](https://console.eu-gb.bluemix.net/login) in a separate tab. First time users need to complete a 4-step wizard. This starts by accepting the terms & conditions.
+* Use Ctrl-click (or the equivalent action for your system) to open the [Login to Bluemix](https://console.bluemix.net/login) in a separate tab. First time users need to complete a 4-step wizard. This starts by accepting the terms & conditions.
 
   ![Terms & conditions][13]
 
